@@ -1,0 +1,13 @@
+.dialog-actions {
+  align-content: space-between;
+  align-items: center;
+  border-top: var(--size-1) solid var(--color-border-default);
+  box-sizing: border-box;
+  column-gap: var(--gap-md);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: var(--padding-spacious) var(--padding-spacious) var(--padding-baggy)
+    var(--padding-spacious);
+  width: 100%;
+}

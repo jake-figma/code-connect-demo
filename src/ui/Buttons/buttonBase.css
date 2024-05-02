@@ -1,0 +1,89 @@
+.button-base {
+  all: unset;
+  background: var(--button-bg, var(--color-bg-brand));
+  border-radius: var(--size-24);
+  color: var(--button-color, var(--color-text-contrast));
+  cursor: pointer;
+  display: flex;
+  font-size: 1.125rem;
+  letter-spacing: -0.01125rem;
+  line-height: 2rem;
+  padding: var(--padding-default) var(--padding-baggy);
+  position: relative;
+}
+.button-base.button-base-size-small {
+  font-size: 1rem;
+  letter-spacing: -0.01rem;
+  line-height: 1.75rem;
+  padding: var(--padding-compact) var(--padding-spacious);
+}
+
+.button-base.button-base-icon-start,
+.button-base.button-base-icon-end {
+  align-items: center;
+  gap: var(--size-8);
+}
+.button-base.button-base-icon-start {
+  padding-left: var(--size-16);
+}
+.button-base.button-base-icon-end {
+  padding-right: var(--size-16);
+}
+.button-base.button-base-icon-only {
+  height: calc(var(--size-12) * 2);
+  padding: var(--size-12);
+  width: calc(var(--size-12) * 2);
+}
+.button-base .icon {
+  --icon-fill: var(--button-icon, var(--color-icon-contrast));
+}
+.button-base:hover {
+  --button-bg: var(--button-bg-hover, var(--color-bg-brand-hover));
+}
+.button-base:active {
+  --button-bg: var(--button-bg-active, var(--color-bg-brand-active));
+}
+.button-base:focus-visible {
+  outline: none;
+}
+.button-base:focus-visible::after {
+  border-radius: var(--size-24);
+  bottom: -2px;
+  box-shadow: 0 0 0 2px var(--color-focus-ring);
+  content: "";
+  display: block;
+  left: -2px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+}
+
+.button-base-variant-primary {
+  --button-bg: var(--color-bg-brand);
+  --button-bg-hover: var(--color-bg-brand-hover);
+  --button-color: var(--color-text-contrast);
+}
+.button-base-variant-secondary {
+  --button-bg: var(--color-bg-brand-secondary);
+  --button-bg-active: var(--color-bg-brand-secondary-active);
+  --button-bg-hover: var(--color-bg-brand-secondary-hover);
+  --button-color: var(--color-text-contrast);
+}
+.button-base-variant-inverse {
+  --button-bg: var(--color-bg-default);
+  --button-bg-active: var(--color-bg-inactive);
+  --button-bg-hover: var(--color-bg-subtle);
+  --button-color: var(--color-text-body);
+  --button-icon: var(--color-icon-default);
+}
+.button-base-variant-inverse:focus-visible {
+  --button-bg: var(--color-bg-subtle);
+}
+.button-base.button-base-disabled,
+.button-base:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  --button-bg: var(--color-bg-inactive);
+  --button-color: var(--color-text-subdued);
+  --button-icon: var(--color-icon-subdued);
+}

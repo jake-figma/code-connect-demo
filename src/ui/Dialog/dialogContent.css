@@ -1,0 +1,32 @@
+.dialog-content {
+  display: flex;
+  align-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: var(--gap-md);
+  padding: var(--gap-xxl) var(--padding-baggy) var(--padding-baggy)
+    var(--padding-baggy);
+  width: 100%;
+}
+
+.dialog-content > * {
+  margin: 0;
+}
+
+.dialog-content > :nth-child(1) {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.02rem;
+}
+.dialog-content > :nth-child(2) {
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 1.575rem */
+  letter-spacing: -0.01125rem;
+}

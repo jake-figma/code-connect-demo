@@ -1,0 +1,33 @@
+.dialog {
+  display: flex;
+  align-items: flex-start;
+  background: var(--color-bg-default);
+  border-top: var(--size-1) solid var(--color-border-default);
+  bottom: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.dialog > .button-base-icon-only {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .dialog {
+    border-radius: var(--radius-heavy);
+    border: var(--size-1) solid var(--color-border-default);
+    max-width: 30rem;
+    position: relative;
+    width: 90%;
+  }
+
+  .dialog > .button-base-icon-only {
+    display: block;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+  }
+}

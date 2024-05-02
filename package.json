@@ -1,0 +1,33 @@
+{
+  "name": "code-connect-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "app:dev": "vite",
+    "app:build": "tsc && vite build",
+    "app:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "app:preview": "vite preview",
+    "figma:connect:create": "export $(cat secrets.env | xargs)&& figma connect create",
+    "figma:connect:unpublish": "export $(cat secrets.env | xargs)&& figma connect unpublish",
+    "figma:connect:publish": "export $(cat secrets.env | xargs)&& figma connect publish"
+  },
+  "dependencies": {
+    "@figma/code-connect": "^0.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.6.13",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
