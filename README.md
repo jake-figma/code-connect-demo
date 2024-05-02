@@ -10,7 +10,7 @@
 
 ## Set up file and link Code Connect docs
 
-- Duplicate [this file](https://www.figma.com/file/SS2xN8AagXT0ofpo8PNIp9) and get the file key from the duplicated file url.
+- Duplicate [this file](https://www.figma.com/community/file/1367910052286562243) and get the file key from the duplicated file url.
 - In this repository, find all `SS2xN8AagXT0ofpo8PNIp9` and replace with the new file's file key.
 
 ## React server
