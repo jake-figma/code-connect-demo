@@ -7,10 +7,7 @@
     "app:dev": "vite",
     "app:build": "tsc && vite build",
     "app:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "app:preview": "vite preview",
-    "figma:connect:create": "export $(cat secrets.env | xargs)&& figma connect create",
-    "figma:connect:unpublish": "export $(cat secrets.env | xargs)&& figma connect unpublish",
-    "figma:connect:publish": "export $(cat secrets.env | xargs)&& figma connect publish"
+    "app:preview": "vite preview"
   },
   "dependencies": {
     "@figma/code-connect": "^0.1.1",
