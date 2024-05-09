@@ -11,7 +11,7 @@ function App() {
     >
       <Dialog>
         <DialogContent
-          headline={<h2>Here is a headline</h2>}
+          headline={<h2>Here is a livestream you should wa</h2>}
           content={
             <p>
               Here is some content. Here is some content. Here is some content.
@@ -24,7 +24,7 @@ function App() {
           <Button onClick={() => {}} variant="inverse" size="small">
             Cancel
           </Button>
-          <Button type="button" onClick={() => {}} variant="secondary">
+          <Button onClick={() => {}} variant="secondary">
             Action
           </Button>
         </DialogActions>
