@@ -10,7 +10,7 @@
     "app:preview": "vite preview"
   },
   "dependencies": {
-    "@figma/code-connect": "^0.1.1",
+    "@figma/code-connect": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
